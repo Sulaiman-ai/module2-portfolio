@@ -62,3 +62,44 @@ header nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
+
+
+/* main page layout */
+.page-section {
+  /* width: 100%; */
+  /* margin-left: 20px; */
+  padding: 20px;
+  padding-left: 50px;
+  background-color: blanchedalmond;
+}
+
+.page-section h2 {
+  padding-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  /* border: solid; */
+  background-color: blueviolet;
+  aspect-ratio: 2;
+  height: 180px;
+  /* width: 200px; */
+}
+
+.contact {
+  background-color: black;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
