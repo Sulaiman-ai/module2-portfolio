@@ -63,6 +63,25 @@ header nav ul li {
   margin-left: 25px;
 }
 
+/* hero */
+.hero-banner {
+  height: 500px;
+  width: 100%;
+  /* margin-bottom: 25px; */
+  background-image: url("../images/laptop-tech-banner02.jpg");
+  background-size: cover;
+  background-position: center;
+  /* border: solid; */
+}
+
+.pfp {
+  height: 300px;
+  width: 300px;
+  /* aspect-ratio: 1; */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 
 /* main page layout */
 .page-section {
