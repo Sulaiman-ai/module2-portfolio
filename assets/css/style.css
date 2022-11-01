@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,36 +29,33 @@ p {
 }
 
 header {
-  /* border: solid; */
-  padding: 20px;
+  display: flex;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  /* padding: 20px; */
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   background-color: #d9dcd6;
   /* color: #ffffff; */
 }
 
 header h1 {
-  /* border: solid; */
+  padding: 2vh;
   display: inline-block;
   /* font-size: 48px; */
 }
 
-/* header secondary colour */
-header h1 .alt-title-shade {
-  color: #d9dcd6;
-}
-
 header nav {
-  /* border: solid; */
-  /* padding-top: 15px; */
+  margin-left: auto;
+  margin-right: 0;
+  width: 25%;
   margin-right: 20px;
-  float: right;
+  /* float: right; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   /* align-content: center; */
 }
 
 header nav ul {
-  /* border: solid; */
   list-style-type: none;
 }
 
@@ -63,21 +64,26 @@ header nav ul li {
   margin-left: 25px;
 }
 
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 /* hero */
 .hero-banner {
-  height: 500px;
-  width: 100%;
-  /* margin-bottom: 25px; */
+  padding-top: 7vh;
+  height: 50vh;
+  width: 100vw;
   background-image: url("../images/laptop-tech-banner02.jpg");
   background-size: cover;
   background-position: center;
-  /* border: solid; */
 }
 
 .pfp {
-  height: 300px;
-  width: 300px;
-  /* aspect-ratio: 1; */
+  display: block;
+  margin:auto;
+  aspect-ratio: 1;
+  height: 35vh;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -85,8 +91,7 @@ header nav ul li {
 
 /* main page layout */
 .page-section {
-  /* width: 100%; */
-  /* margin-left: 20px; */
+  width: 100vw;
   padding: 20px;
   padding-left: 50px;
   background-color: blanchedalmond;
@@ -96,17 +101,47 @@ header nav ul li {
   padding-bottom: 20px;
 }
 
-.projects {
+.about {
+  background-color: #d9dcd6
+}
+
+/* .projects {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
+} */
+
+/* @media (max-width: 400px) { */
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+/* } */
+
+.project a {
+  text-decoration: none;
+}
+
+figcaption {
+  text-decoration: none;
+  color: black;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .thumbnail {
-  /* border: solid; */
   background-color: blueviolet;
   aspect-ratio: 2;
-  height: 180px;
+  width: 70vw;
+  /* height: 180px; */
+
   /* width: 200px; */
+}
+
+.thumbnail.first {
+  width: 80vw;
 }
 
 .contact {
